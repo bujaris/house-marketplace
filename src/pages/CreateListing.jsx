@@ -28,7 +28,6 @@ function CreateListing() {
         images: {},
         latitude: 0,
         longitude: 0,
-
     })
 
 const {type, name, bedrooms, bathrooms, parking, furnished, address, offer, regularPrice, discountedPrice, images, latitude, longitude} = formData
@@ -181,9 +180,9 @@ const onMutate = (e) => {
 
     //Files
     if(e.target.files){
-        setFormData((prevState) =>  ({
+        setFormData((prevState) => ({
             ...prevState,
-            imaages: e.target.files
+            images: e.target.files
         }))
     }
 
